@@ -17,14 +17,14 @@ int main()
     {
     	fact.push_back((i * fact[i - 1]) % MOD);
     	ans.push_back((fact[i] * ans[i - 1]) % MOD);
-	}
-	ll t;
-	cin >> t;
-	while(t--)
-	{
-	    ll n;
-	    cin >> n;
-	    cout << ans[n] << "\n";
-	}
-	return 0;
+    }
+    ll t;
+    cin >> t;
+    while(t--)
+    {
+	ll n;
+	cin >> n;
+	cout << ans[n] << "\n";
+    }
+    return 0;
 }
