@@ -1,5 +1,14 @@
 // Problem link : https://www.codechef.com/CCOD2020/problems/FILLBOX
 
+/*
+The problem is solved using Dynamic Programming.
+In the solution dp[i][1] is the number of ways to fill i boxes (considering 1st box to be at index 0)
+such that the ith box contains Q balls
+whereas
+dp[i][0] is the number of ways to fill i boxes such that the ith box does not contain Q balls.
+Hence the answer is simply equal to dp[n-1][1].
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
